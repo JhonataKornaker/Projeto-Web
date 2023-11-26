@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-bottom: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(202, 212, 255) 
+}
+
+.principal {
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    min-height: 800px;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+
+.cabecalho {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    margin-bottom: 15px;
+    font-size: 24px;
+    /*align-self: center; /*PARA ALINHA UM UNICO COMPONENTE DENTRO DO DISPLAY FLEX*/
+}
+
+#form-produto {
+    /*border: 1px solid;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 90vh;
+    overflow: auto;
+}
+
+#form-produto input {
+    width: 600px;
+    padding: 5px;
+    height: 25px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 20px;
+    font-size: 18px;
+}
+
+#form-produto button {
+    font-size: 24px;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.principal a {
+    align-self: center;
+    margin-top: auto;  /* Adicionando esta linha para empurrar para a parte inferior */
+    margin-right: 15px; /* Adicionei uma margem à direita para espaçamento */
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: rgb(202, 212, 255);
+    color: black;
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 15px 25px;
+    text-decoration: none;
+}

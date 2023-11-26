@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-bottom: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(202, 212, 255) 
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    min-height: 800px;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+
+.cabecalho {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    margin-bottom: 15px;
+    /*align-self: center; /*PARA ALINHA UM UNICO COMPONENTE DENTRO DO DISPLAY FLEX*/
+}
+
+.principal a {
+    align-self: flex-end;
+    margin: 15px;
+    padding: 15px;
+}
+
+.cabecalho input {
+    width: 85%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid;
+    font-size: 18px;
+    background-color: transparent;
+    background-image: url('./icons/icons8-pesquisar-24.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+.cabecalho-pesquisar {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    justify-content: center;
+}
+
+a {
+    background-color: rgb(202, 212, 255);
+    color: black;
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+.principal-sessao {
+    height: 100vh;
+    overflow: auto; 
+}
+
+.sessao-lista {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.sessao-lista-campo {
+    /*border: 1px solid;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1; /* Adiciona flex-grow: 1 para ocupar o espaço restante */
+}
+
+.sessao-lista-campo input {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    height: 25px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer; /* Adiciona o cursor de mãozinha */
+}
+
+button img {
+    width: 24px; /* Ajusta o tamanho da imagem conforme necessário */
+    height: 24px;
+}
+
+/* Estilo do Modal */
+.modal {
+    display: none; /* Inicialmente escondido */
+    position: fixed; /* Fica em posição fixa na tela */
+    z-index: 1; /* Fica em cima de tudo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Habilita scroll se necessário */
+    background-color: rgb(0,0,0); /* Fundo preto com opacidade */
+    background-color: rgba(0,0,0,0.4); /* Também adiciona opacidade */
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Você pode ajustar isso para o tamanho que preferir */
+    height: 60%;
+}
+
+  /* Botão de fechar */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #edit-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #edit-form input {
+    border: 1px solid;
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  #edit-form label {
+    font-size: 24px;
+  }
+
+  #edit-form button {
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 100px;
+    margin-top: 80px;
+    align-self: center;
+  }
+  
+  
